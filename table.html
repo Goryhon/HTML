@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body bgcolor="white" text="black" link="#0000FF" alink="FF0000" vlink="#800080">
+
+<h1>Меню</h1>
+<a href="index.html">Главная страница</a>
+<a href="table.html">Список зароботка исполнителей</a>
+
+<hr>
+
+<h1>Список зароботка исполнителей</h1>
+
+<details>
+    <summary> График </summary>
+    <form>
+        <table>
+          <tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0">Выручка<br>
+            </td>
+            <td>
+              <input type="radio" name="oy" value="0">Исполнитель<br>
+              <input type="radio" name="oy" value="1">Сервис<br>
+            </td>
+          </tr>
+        </table>
+        <input type=button value="Построить график">
+    </form> 
+</details> 
+<details>
+    <summary> Фильтр</summary>
+    <form>
+        <p>
+          <label for="yFrom">Выручка: </label>
+           от <input type="number" name="yFrom"> до <input type="number" name="yTo">
+        </p>
+        <p>
+            <label for="name">Сервис:</label>
+            <input type=text name="name">
+        </p>
+        <p>
+           <label for="city">Исполнитель</label>
+           <input type=text name="city">
+        </p>
+        <input type=button value="Найти">       
+    </form> 
+</details> 
+<details>
+    <summary>Сортировка</summary>
+    <form>
+      <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">№</option>
+            <option value="1">Исполнитель</option>
+            <option value="2">Сервис</option>
+            <option value="3">Выплаты</option>
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descFirst" >
+        </p>  
+        <p>
+          Второй уровень:
+          <select name="sortSecond">
+            <option value="0">№</option>
+            <option value="1">Исполнитель</option>
+            <option value="2">Сервис</option>
+            <option value="3">Выплаты</option>
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descSecond" >
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+            <option value="0">№</option>
+            <option value="1">Исполнитель</option>
+            <option value="2">Сервис</option>
+            <option value="3">Выплаты</option>
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descThird" >
+        </p>
+      <input type=button value="Сортировать">       
+    </form> 
+</details> 
+
+<table border="2" cellspacing="0" cellpadding="5"><tbody>
+		<tr>
+			<td>№</td>
+			<td>Исполнитель</td>
+			<td>Стриминговый сервис</td>
+			<td>Выплаты за 2021 год (руб.)</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Pharaoh</td>
+			<td>Spotify</td>
+			<td>~7.000.000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Pharaoh</td>
+			<td>Yandex music</td>
+			<td>~4.000.000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Pharaoh</td>
+			<td>Vk</td>
+			<td>~1.400.000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Pharaoh</td>
+			<td>Boom</td>
+			<td>~2.800.000</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Pharaoh</td>
+			<td>Apple music</td>
+			<td>~6.300.000</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Джизус</td>
+			<td>Spotify</td>
+			<td>~800.000</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Джизус</td>
+			<td>Yandex music</td>
+			<td>~400.000</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Джизус</td>
+			<td>Vk</td>
+			<td>~90.000</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Джизус</td>
+			<td>Boom</td>
+			<td>~150.000</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Джизус</td>
+			<td>Apple music</td>
+			<td>~470.000</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>INSTASAMKA</td>
+			<td>Spotify</td>
+			<td>~14.000.000</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>INSTASAMKA</td>
+			<td>Yandex music</td>
+			<td>~8.900.000</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>INSTASAMKA</td>
+			<td>Vk</td>
+			<td>~3.300.000</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>INSTASAMKA</td>
+			<td>Boom</td>
+			<td>~6.500.000</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>INSTASAMKA</td>
+			<td>Apple music</td>
+			<td>~11.500.000</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>zavet</td>
+			<td>Spotify</td>
+			<td>~3.360.000</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>zavet</td>
+			<td>Yandex music</td>
+			<td>~900.000</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>zavet</td>
+			<td>Vk</td>
+			<td>~70.000</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>zavet</td>
+			<td>Boom</td>
+			<td>~120.000</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>zavet</td>
+			<td>Apple music</td>
+			<td>~6.700.000</td>
+		</tr>
+		<tr>
+			<td>21</td>
+			<td>FABE09</td>
+			<td>Spotify</td>
+			<td>~1500</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>FABE09</td>
+			<td>Yandex music</td>
+			<td>~300</td>
+		</tr>
+		<tr>
+			<td>23</td>
+			<td>FABE09</td>
+			<td>Vk</td>
+			<td>~54</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>FABE09</td>
+			<td>Boom</td>
+			<td>~144</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>FABE09</td>
+			<td>Apple music</td>
+			<td>~1200</td>
+		</tr>
+		<tr>
+			<td>26</td>
+			<td>FACE</td>
+			<td>Spotify</td>
+			<td>~760.000</td>
+		</tr>
+		<tr>
+			<td>27</td>
+			<td>FACE</td>
+			<td>Yandex music</td>
+			<td>~300.000</td>
+		</tr>
+		<tr>
+			<td>28</td>
+			<td>FACE</td>
+			<td>Boom</td>
+			<td>~550.000</td>
+		</tr>
+		<tr>
+			<td>29</td>
+			<td>FACE</td>
+			<td>Apple music</td>
+			<td>~890.000</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+
